@@ -27,9 +27,10 @@ close.addEventListener('click',function(){
 // const 변수명 = new Swiper('적용대상');
 // const 변수명 = new Swiper('적용대상',{속성:값, 속성:값});
 const pawin_slide = new Swiper('#pawin_slide',{
-    autoplay:{delay:1000}, //자동재생
+    autoplay:{delay:10000}, //자동재생
     loop:true, //마지막슬라이드->첫번째슬라이드 자연스러운변경
-    effect:'fade',
+    // effect:'fade',
+    direction:'horizontal',
     navigation: { //이전, 다음 내비게이션 연결
         nextEl: '#pawin_slide .swiper-button-next',
         prevEl: '#pawin_slide .swiper-button-prev'
